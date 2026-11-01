@@ -1,0 +1,16 @@
+import random
+
+print("Welcome to Moxy number guessing game")
+random = random.randint(1, 10)
+
+guess = int(input("Guess a number from 1 to 10: "))
+
+while guess != random:
+    if guess > random:
+        print("The random number is lower \nTry again")
+        guess = int(input("Guess a number from 1 to 10: "))
+    else:
+        print("The random number is higher \nTry again")
+        guess = int(input("Guess a number from 1 to 10: "))
+
+print(f"The random number was {random} \nCORRECT!!")
